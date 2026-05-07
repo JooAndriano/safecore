@@ -1,0 +1,244 @@
+<html class="dark"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&amp;family=Space_Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface": "#e5e2e1",
+                    "outline-variant": "#5d3f3b",
+                    "on-primary": "#690003",
+                    "on-tertiary": "#003545",
+                    "surface-variant": "#353534",
+                    "on-secondary-container": "#633700",
+                    "on-background": "#e5e2e1",
+                    "inverse-primary": "#c0000a",
+                    "inverse-surface": "#e5e2e1",
+                    "on-tertiary-container": "#002e3c",
+                    "secondary-fixed": "#ffdcbf",
+                    "surface-dim": "#131313",
+                    "primary": "#ffb4aa",
+                    "on-secondary": "#4b2800",
+                    "tertiary": "#68d3fc",
+                    "surface-container-lowest": "#0e0e0e",
+                    "surface-container": "#201f1f",
+                    "primary-container": "#ff5545",
+                    "on-tertiary-fixed": "#001f29",
+                    "secondary-fixed-dim": "#ffb874",
+                    "on-error": "#690005",
+                    "surface-container-high": "#2a2a2a",
+                    "secondary-container": "#fe9400",
+                    "on-error-container": "#ffdad6",
+                    "primary-fixed": "#ffdad5",
+                    "tertiary-container": "#1d9cc3",
+                    "surface-tint": "#ffb4aa",
+                    "inverse-on-surface": "#313030",
+                    "secondary": "#ffbc7c",
+                    "on-primary-fixed-variant": "#930005",
+                    "on-secondary-fixed-variant": "#6a3b00",
+                    "tertiary-fixed-dim": "#68d3fc",
+                    "on-surface-variant": "#e7bdb7",
+                    "on-secondary-fixed": "#2d1600",
+                    "primary-fixed-dim": "#ffb4aa",
+                    "on-tertiary-fixed-variant": "#004d63",
+                    "outline": "#ad8883",
+                    "error-container": "#93000a",
+                    "surface": "#131313",
+                    "surface-bright": "#393939",
+                    "surface-container-low": "#1c1b1b",
+                    "error": "#ffb4ab",
+                    "on-primary-container": "#5c0002",
+                    "surface-container-highest": "#353534",
+                    "on-primary-fixed": "#410001",
+                    "tertiary-fixed": "#bbe9ff",
+                    "background": "#131313"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Space Grotesk"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary/30">
+<!-- TopAppBar -->
+<header class="bg-[#131313] fixed top-0 w-full z-50 no-border tonal-shift bg-neutral-900 flat no shadows flex justify-between items-center px-6 h-20 w-full">
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-on-surface hover:bg-neutral-800 transition-colors active:scale-95 duration-200 p-2 rounded-full">menu</button>
+<h1 class="font-['Inter'] font-bold tracking-tighter text-on-surface text-2xl font-black tracking-tighter text-[#e5e2e1]">SAFECORE</h1>
+</div>
+<div class="flex items-center gap-2">
+<button class="material-symbols-outlined text-on-surface hover:bg-neutral-800 transition-colors active:scale-95 duration-200 p-2 rounded-full">search</button>
+<div class="h-8 w-8 rounded-full overflow-hidden border border-white/10">
+<img class="w-full h-full object-cover" data-alt="Close up portrait of a professional rescue operator with a focused expression in cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOPQzhbi2prQtFC88G36B7F54U1v1qaUoPAB_PtJJWEXzoAgXFtGNemHuysO21M_JFLfT1NuTwgKpCVC8NdbGzHBa3JRFHROkFP8csFa-IsfrtxrgeBBHWJS6ogc_JpsZemI6gDmsuFzapIddgUYHEySBgj_1w-FpIEF4vLc3Oj9fRbA5iCcPfqpnxkd0J6pYrecVXgK2ccTmfwdRsS70eFgioQ7tPOU-SBL3TnjJhNEXHzhvDOwbcCvdE_g45bs2N61iYuTfXyIvR"/>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-4xl mx-auto min-h-screen flex flex-col">
+<!-- AI Status Indicator -->
+<div class="mb-8 flex items-center gap-3">
+<div class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-tertiary"></span>
+</div>
+<span class="font-label text-xs uppercase tracking-[0.2em] text-tertiary font-bold">Sentinel AI Online</span>
+</div>
+<!-- Chat Canvas -->
+<div class="flex-1 space-y-8 mb-8">
+<!-- System/AI Message -->
+<div class="flex flex-col items-start gap-4 max-w-[85%]">
+<div class="bg-surface-container-high rounded-2xl p-6 shadow-sm">
+<p class="font-headline font-semibold text-lg mb-2 text-on-surface">Emergency Protocol Active</p>
+<p class="text-on-surface/80 leading-relaxed body-md">I am monitoring local seismic activity and power grid status. Based on your current location, the nearest reinforced shelter is 1.2km North-East. Would you like me to guide you through the evacuation checklist or display the safest route?</p>
+</div>
+<div class="flex gap-2">
+<span class="font-label text-[10px] uppercase tracking-widest text-neutral-500">14:02 PM</span>
+<span class="font-label text-[10px] uppercase tracking-widest text-tertiary font-bold">Verified Data</span>
+</div>
+</div>
+<!-- User Message -->
+<div class="flex flex-col items-end gap-4 ml-auto max-w-[85%]">
+<div class="bg-primary-container text-on-primary-container rounded-2xl p-6 shadow-xl">
+<p class="leading-relaxed font-semibold">Show evacuation checklist. My family is with me, we have a small pet.</p>
+</div>
+<span class="font-label text-[10px] uppercase tracking-widest text-neutral-500">14:03 PM</span>
+</div>
+<!-- AI Detailed Guide Message -->
+<div class="flex flex-col items-start gap-4 max-w-[90%]">
+<div class="bg-surface-container-high rounded-2xl p-6 w-full border-l-4 border-tertiary">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-tertiary" style="font-variation-settings: 'FILL' 1;">fact_check</span>
+<h3 class="font-headline font-bold text-xl">Family Evacuation (Pet Inclusive)</h3>
+</div>
+<div class="space-y-4">
+<div class="bg-surface-container-lowest p-4 rounded-xl flex gap-4 items-start">
+<span class="font-label text-tertiary font-bold text-lg">01</span>
+<div>
+<p class="font-bold text-on-surface">Secure Pet Carrier</p>
+<p class="text-sm text-on-surface/60">Ensure pets are in carriers or leashed. Don't forget their 3-day water supply.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl flex gap-4 items-start">
+<span class="font-label text-tertiary font-bold text-lg">02</span>
+<div>
+<p class="font-bold text-on-surface">Grab Sentinel Go-Bag</p>
+<p class="text-sm text-on-surface/60">Located in your hallway closet. Verification tag: #SC-772.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl flex gap-4 items-start">
+<span class="font-label text-tertiary font-bold text-lg">03</span>
+<div>
+<p class="font-bold text-on-surface">Shut Off Main Utilities</p>
+<p class="text-sm text-on-surface/60">Gas and water mains must be closed before departure.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Action Chips -->
+<div class="flex flex-wrap gap-3 pt-4">
+<button class="bg-surface-container-highest px-5 py-3 rounded-full font-label text-xs uppercase tracking-widest hover:bg-neutral-800 transition-colors border border-white/5">
+                    Map Route
+                </button>
+<button class="bg-surface-container-highest px-5 py-3 rounded-full font-label text-xs uppercase tracking-widest hover:bg-neutral-800 transition-colors border border-white/5">
+                    Contact Family
+                </button>
+<button class="bg-surface-container-highest px-5 py-3 rounded-full font-label text-xs uppercase tracking-widest hover:bg-neutral-800 transition-colors border border-white/5">
+                    Emergency Broadcast
+                </button>
+</div>
+</div>
+<!-- Sticky Input Area -->
+<div class="fixed bottom-24 left-0 right-0 px-6 max-w-4xl mx-auto z-40">
+<div class="bg-surface-container-lowest/80 backdrop-blur-2xl rounded-[2rem] p-3 shadow-2xl flex items-center gap-3 border border-white/5">
+<button class="material-symbols-outlined text-neutral-400 p-3 hover:text-white transition-colors">add_circle</button>
+<input class="bg-transparent border-none focus:ring-0 flex-1 text-on-surface placeholder:text-neutral-500 font-medium py-3" placeholder="Ask Sentinel anything..." type="text"/>
+<button class="bg-primary-container text-on-primary-container p-4 rounded-full flex items-center justify-center hover:scale-105 active:scale-95 transition-all">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">send</span>
+</button>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="bg-[#131313]/70 backdrop-blur-xl fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pt-3 pb-8 z-50 rounded-t-3xl border-t border-white/5 shadow-[0px_-24px_48px_rgba(0,0,0,0.5)]">
+<div class="flex flex-col items-center justify-center text-neutral-400 opacity-60 hover:opacity-100 transition-all tactile-click-feedback scale-90">
+<span class="material-symbols-outlined mb-1">home</span>
+<span class="font-['Space_Grotesk'] text-[10px] uppercase tracking-widest">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-neutral-400 opacity-60 hover:opacity-100 transition-all tactile-click-feedback scale-90">
+<span class="material-symbols-outlined mb-1">verified_user</span>
+<span class="font-['Space_Grotesk'] text-[10px] uppercase tracking-widest">Preparedness</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-red-600 text-white rounded-2xl px-5 py-2 scale-110 transition-transform">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">smart_toy</span>
+<span class="font-['Space_Grotesk'] text-[10px] uppercase tracking-widest">AI Assistant</span>
+</div>
+<div class="flex flex-col items-center justify-center text-neutral-400 opacity-60 hover:opacity-100 transition-all tactile-click-feedback scale-90">
+<span class="material-symbols-outlined mb-1">settings</span>
+<span class="font-['Space_Grotesk'] text-[10px] uppercase tracking-widest">Settings</span>
+</div>
+</nav>
+<!-- Navigation Drawer (Off-screen by default in this implementation) -->
+<div class="hidden fixed inset-0 z-[60] bg-black/60 backdrop-blur-sm" id="drawer">
+<div class="h-full w-80 bg-[#131313] rounded-r-2xl shadow-2xl flex flex-col p-6 gap-4 smooth-slide-in">
+<div class="flex items-center gap-4 mb-8">
+<div class="h-12 w-12 rounded-full overflow-hidden bg-neutral-800">
+<img class="w-full h-full object-cover" data-alt="Close up face of a young tech-savvy guardian with short hair and serious expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDY9YevyhATmAf9CbLvaP57yuH1H0iE5xKBGQbUVuX5dFgekrFBQatW6j6YpkAwrIaTSms_e482C5zky5SQR7yBEiisGwMtWbH78MKfmCnDwrteNSB-XdbHt0qdUcXmsSyGjEjrhr9L0wygwV6bLoqVTBX8sd-aF849NBRuT1s9Nzu4YZFdHuKTQ03TBfzSIcXlzcnR7Ui6AbPsk6m6eiRlifRisiUuut4m5Z52g59NABrLuUwecry2COn0076BWHyyLNrFcxnP-LUU"/>
+</div>
+<div>
+<h2 class="text-red-600 font-black font-['Inter'] font-semibold">Guardian Mode</h2>
+<p class="text-xs text-neutral-400 uppercase tracking-widest font-label">Status: Secure</p>
+</div>
+</div>
+<nav class="flex flex-col gap-2">
+<a class="flex items-center gap-4 p-4 rounded-xl text-neutral-400 hover:bg-neutral-800 transition-colors font-['Inter'] font-semibold" href="#">
+<span class="material-symbols-outlined">contact_phone</span>
+<span>Emergency Contacts</span>
+</a>
+<a class="flex items-center gap-4 p-4 rounded-xl text-neutral-400 hover:bg-neutral-800 transition-colors font-['Inter'] font-semibold" href="#">
+<span class="material-symbols-outlined">map</span>
+<span>Evacuation Map</span>
+</a>
+<a class="flex items-center gap-4 p-4 rounded-xl text-neutral-400 hover:bg-neutral-800 transition-colors font-['Inter'] font-semibold" href="#">
+<span class="material-symbols-outlined">medical_services</span>
+<span>Medical Info</span>
+</a>
+<a class="flex items-center gap-4 p-4 rounded-xl text-neutral-400 hover:bg-neutral-800 transition-colors font-['Inter'] font-semibold" href="#">
+<span class="material-symbols-outlined">inventory_2</span>
+<span>Supplies Inventory</span>
+</a>
+<a class="flex items-center gap-4 p-4 rounded-xl text-neutral-400 hover:bg-neutral-800 transition-colors font-['Inter'] font-semibold" href="#">
+<span class="material-symbols-outlined">help</span>
+<span>Help Center</span>
+</a>
+</nav>
+</div>
+</div>
+</body></html>

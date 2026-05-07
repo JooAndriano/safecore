@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&amp;family=Space_Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface": "#e5e2e1",
+                        "outline-variant": "#5d3f3b",
+                        "on-primary": "#690003",
+                        "on-tertiary": "#003545",
+                        "surface-variant": "#353534",
+                        "on-secondary-container": "#633700",
+                        "on-background": "#e5e2e1",
+                        "inverse-primary": "#c0000a",
+                        "inverse-surface": "#e5e2e1",
+                        "on-tertiary-container": "#002e3c",
+                        "secondary-fixed": "#ffdcbf",
+                        "surface-dim": "#131313",
+                        "primary": "#ffb4aa",
+                        "on-secondary": "#4b2800",
+                        "tertiary": "#68d3fc",
+                        "surface-container-lowest": "#0e0e0e",
+                        "surface-container": "#201f1f",
+                        "primary-container": "#ff5545",
+                        "on-tertiary-fixed": "#001f29",
+                        "secondary-fixed-dim": "#ffb874",
+                        "on-error": "#690005",
+                        "surface-container-high": "#2a2a2a",
+                        "secondary-container": "#fe9400",
+                        "on-error-container": "#ffdad6",
+                        "primary-fixed": "#ffdad5",
+                        "tertiary-container": "#1d9cc3",
+                        "surface-tint": "#ffb4aa",
+                        "inverse-on-surface": "#313030",
+                        "secondary": "#ffbc7c",
+                        "on-primary-fixed-variant": "#930005",
+                        "on-secondary-fixed-variant": "#6a3b00",
+                        "tertiary-fixed-dim": "#68d3fc",
+                        "on-surface-variant": "#e7bdb7",
+                        "on-secondary-fixed": "#2d1600",
+                        "primary-fixed-dim": "#ffb4aa",
+                        "on-tertiary-fixed-variant": "#004d63",
+                        "outline": "#ad8883",
+                        "error-container": "#93000a",
+                        "surface": "#131313",
+                        "surface-bright": "#393939",
+                        "surface-container-low": "#1c1b1b",
+                        "error": "#ffb4ab",
+                        "on-primary-container": "#5c0002",
+                        "surface-container-highest": "#353534",
+                        "on-primary-fixed": "#410001",
+                        "tertiary-fixed": "#bbe9ff",
+                        "background": "#131313"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "3xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Space Grotesk"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary/30 no-scrollbar">
+<!-- TopAppBar -->
+<header class="bg-[#131313] text-on-surface fixed top-0 w-full z-50 no-border tonal-shift bg-neutral-900 flat no shadows">
+<div class="flex justify-between items-center px-6 h-20 w-full">
+<div class="flex items-center gap-4">
+<button class="hover:bg-neutral-800 transition-colors p-2 rounded-full active:scale-95 duration-200">
+<span class="material-symbols-outlined text-on-surface" data-icon="menu">menu</span>
+</button>
+<h1 class="font-['Inter'] font-bold tracking-tighter text-2xl font-black tracking-tighter text-[#e5e2e1]">SAFECORE</h1>
+</div>
+<div class="flex items-center gap-2">
+<button class="hover:bg-neutral-800 transition-colors p-2 rounded-full active:scale-95 duration-200">
+<span class="material-symbols-outlined text-on-surface" data-icon="search">search</span>
+</button>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-2xl mx-auto min-h-screen">
+<!-- Profile Anchor Section -->
+<section class="mb-12">
+<div class="flex items-center gap-6 p-6 rounded-3xl bg-surface-container-low">
+<div class="w-20 h-20 rounded-2xl overflow-hidden relative border-2 border-primary-container">
+<img class="w-full h-full object-cover" data-alt="Modern close-up portrait of a security professional with focused expression in tactical dark apparel" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5YBYPZBmazaxoNmLs8HaE4gls47NAIuMvtACDCUflgU6spb_jepmJsJBCfQex3XEN799qCjFfku9apFd52PGokht2vF5sumT_m9VTpBACsimapJg0Gct9WFpy85sttddOQ2n-JEzPe175NmQYMpjcxLpI4yT_df14fCqSVC_YOh0nM7tMP4O6Hikx6iSS1stEX-JOZUSdvj5DdQDrJ0bKEevsqCowfQPeOB42I7G4IK1ZGZl31LUjeDeneq8eOT29vca5i9T4CBTm"/>
+</div>
+<div>
+<h2 class="text-2xl font-headline font-bold tracking-tight text-on-surface">Guardian Mode</h2>
+<p class="font-label text-xs uppercase tracking-widest text-primary font-semibold">Status: Secure</p>
+</div>
+</div>
+</section>
+<!-- Settings List -->
+<div class="space-y-4">
+<h3 class="font-label text-[10px] uppercase tracking-[0.2em] text-neutral-500 mb-6 px-2">Configuration</h3>
+<!-- Dark Mode Toggle -->
+<div class="group bg-surface-container-low rounded-3xl p-5 flex items-center justify-between transition-all hover:bg-surface-container">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-2xl bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface" data-icon="dark_mode">dark_mode</span>
+</div>
+<div>
+<p class="font-headline font-semibold text-on-surface">Dark Mode</p>
+<p class="text-xs text-neutral-500">System preference active</p>
+</div>
+</div>
+<div class="w-14 h-8 bg-primary-container rounded-full relative flex items-center px-1">
+<div class="w-6 h-6 bg-white rounded-full ml-auto shadow-sm"></div>
+</div>
+</div>
+<!-- Notifications Toggle -->
+<div class="group bg-surface-container-low rounded-3xl p-5 flex items-center justify-between transition-all hover:bg-surface-container">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-2xl bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface" data-icon="notifications_active">notifications_active</span>
+</div>
+<div>
+<p class="font-headline font-semibold text-on-surface">Notifications</p>
+<p class="text-xs text-neutral-500">Alerts and warnings</p>
+</div>
+</div>
+<div class="w-14 h-8 bg-primary-container rounded-full relative flex items-center px-1">
+<div class="w-6 h-6 bg-white rounded-full ml-auto shadow-sm"></div>
+</div>
+</div>
+<!-- Language Selection -->
+<button class="w-full text-left group bg-surface-container-low rounded-3xl p-5 flex items-center justify-between transition-all hover:bg-surface-container active:scale-[0.98]">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-2xl bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface" data-icon="language">language</span>
+</div>
+<div>
+<p class="font-headline font-semibold text-on-surface">Language</p>
+<p class="text-xs text-neutral-500">English (United States)</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-neutral-600" data-icon="chevron_right">chevron_right</span>
+</button>
+<h3 class="font-label text-[10px] uppercase tracking-[0.2em] text-neutral-500 mt-12 mb-6 px-2">Support &amp; Legal</h3>
+<!-- About Section -->
+<button class="w-full text-left group bg-surface-container-low rounded-3xl p-5 flex items-center justify-between transition-all hover:bg-surface-container active:scale-[0.98]">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-2xl bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface" data-icon="info">info</span>
+</div>
+<div>
+<p class="font-headline font-semibold text-on-surface">About</p>
+<p class="text-xs text-neutral-500">Version 2.4.0 (Build 982)</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-neutral-600" data-icon="chevron_right">chevron_right</span>
+</button>
+<!-- Danger Zone Button -->
+<button class="w-full mt-8 p-6 rounded-3xl bg-error-container/20 border border-error-container/30 flex items-center justify-center gap-3 active:scale-[0.98] transition-transform">
+<span class="material-symbols-outlined text-error" data-icon="logout">logout</span>
+<span class="font-headline font-bold text-error">Logout Guardian Session</span>
+</button>
+</div>
+<!-- System Visual Aid -->
+<div class="mt-12 p-1 bg-gradient-to-r from-primary-container/20 via-transparent to-primary-container/20 rounded-3xl">
+<div class="bg-surface-container-lowest rounded-[22px] p-6 text-center">
+<p class="font-label text-[10px] uppercase tracking-[0.3em] text-primary mb-2">Encrypted Data Tunnel</p>
+<p class="text-[10px] text-neutral-600 font-label leading-relaxed">
+                    ALL SETTINGS ARE SYNCED ACROSS YOUR SECURE NETWORK ENDPOINTS USING END-TO-END QUANTUM RESISTANT ENCRYPTION.
+                </p>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pt-3 pb-8 bg-[#131313]/70 backdrop-blur-xl z-50 rounded-t-3xl border-t border-white/5 shadow-[0px_-24px_48px_rgba(0,0,0,0.5)]">
+<a class="flex flex-col items-center justify-center text-neutral-400 opacity-60 hover:opacity-100 transition-opacity" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="home">home</span>
+<span class="font-['Space_Grotesk'] text-[10px] uppercase tracking-widest">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-neutral-400 opacity-60 hover:opacity-100 transition-opacity" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="verified_user">verified_user</span>
+<span class="font-['Space_Grotesk'] text-[10px] uppercase tracking-widest">Preparedness</span>
+</a>
+<a class="flex flex-col items-center justify-center text-neutral-400 opacity-60 hover:opacity-100 transition-opacity" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="smart_toy">smart_toy</span>
+<span class="font-['Space_Grotesk'] text-[10px] uppercase tracking-widest">AI Assistant</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-red-600 text-white rounded-2xl px-5 py-2 scale-110 transition-transform" href="#">
+<span class="material-symbols-outlined mb-0.5" data-icon="settings">settings</span>
+<span class="font-['Space_Grotesk'] text-[10px] uppercase tracking-widest">Settings</span>
+</a>
+</nav>
+</body></html>

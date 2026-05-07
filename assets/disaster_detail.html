@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&amp;family=Space_Grotesk:wght@300;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface": "#e5e2e1",
+                    "outline-variant": "#5d3f3b",
+                    "on-primary": "#690003",
+                    "on-tertiary": "#003545",
+                    "surface-variant": "#353534",
+                    "on-secondary-container": "#633700",
+                    "on-background": "#e5e2e1",
+                    "inverse-primary": "#c0000a",
+                    "inverse-surface": "#e5e2e1",
+                    "on-tertiary-container": "#002e3c",
+                    "secondary-fixed": "#ffdcbf",
+                    "surface-dim": "#131313",
+                    "primary": "#ffb4aa",
+                    "on-secondary": "#4b2800",
+                    "tertiary": "#68d3fc",
+                    "surface-container-lowest": "#0e0e0e",
+                    "surface-container": "#201f1f",
+                    "primary-container": "#ff5545",
+                    "on-tertiary-fixed": "#001f29",
+                    "secondary-fixed-dim": "#ffb874",
+                    "on-error": "#690005",
+                    "surface-container-high": "#2a2a2a",
+                    "secondary-container": "#fe9400",
+                    "on-error-container": "#ffdad6",
+                    "primary-fixed": "#ffdad5",
+                    "tertiary-container": "#1d9cc3",
+                    "surface-tint": "#ffb4aa",
+                    "inverse-on-surface": "#313030",
+                    "secondary": "#ffbc7c",
+                    "on-primary-fixed-variant": "#930005",
+                    "on-secondary-fixed-variant": "#6a3b00",
+                    "tertiary-fixed-dim": "#68d3fc",
+                    "on-surface-variant": "#e7bdb7",
+                    "on-secondary-fixed": "#2d1600",
+                    "primary-fixed-dim": "#ffb4aa",
+                    "on-tertiary-fixed-variant": "#004d63",
+                    "outline": "#ad8883",
+                    "error-container": "#93000a",
+                    "surface": "#131313",
+                    "surface-bright": "#393939",
+                    "surface-container-low": "#1c1b1b",
+                    "error": "#ffb4ab",
+                    "on-primary-container": "#5c0002",
+                    "surface-container-highest": "#353534",
+                    "on-primary-fixed": "#410001",
+                    "tertiary-fixed": "#bbe9ff",
+                    "background": "#131313"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Space_Grotesk"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { background-color: #131313; color: #e5e2e1; }
+        .glass-panel {
+            background: rgba(19, 19, 19, 0.7);
+            backdrop-filter: blur(24px);
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+        .bento-item {
+            background-color: #1c1b1b;
+            padding: 1.5rem;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#131313] flex justify-between items-center px-6 h-20 w-full no-border tonal-shift bg-neutral-900">
+<div class="flex items-center gap-4">
+<button class="p-2 text-neutral-500 hover:bg-neutral-800 transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<span class="font-['Inter'] font-bold tracking-tighter text-on-surface text-2xl font-black tracking-tighter text-[#e5e2e1]">SAFECORE</span>
+</div>
+<button class="p-2 text-neutral-500 hover:bg-neutral-800 transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
+</nav>
+<main class="pt-24 pb-32 px-6 max-w-5xl mx-auto">
+<!-- Hero Section -->
+<header class="relative mb-12 overflow-hidden rounded-xl h-80 flex items-end p-8 group">
+<img alt="Earthquake Impact" class="absolute inset-0 w-full h-full object-cover grayscale opacity-40 group-hover:scale-105 transition-transform duration-700" data-alt="Cinematic shot of a cracked asphalt road with deep fissures under a dramatic dark stormy sky at dusk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCc2Tcy2dDedMkud9nU21no9e3d8XoosvM0dJ65oOaTbTa21f6pZJJyXcnBA4khuhsSq-_Uuhm8nNBNpXZYAQ2K1ACqsH_eNBqVudyJZXUDqyF7W1rkQAg_k1cVy4TvuSLS09yExEm-dJY7w5uc5TjkRrpUDqdmyfCoat10Rzd1CHEr1YRQh0dTuKPgLF2nS2xnK0LNMMLdiCpqBV2HftHkl2z7NIXTZuTsNAbGbqUn3A9Yw01uUdlKP0XAVShPKdpHgnutNhU-1e3s"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#131313] via-[#131313]/40 to-transparent"></div>
+<div class="relative z-10">
+<div class="flex items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-primary" data-icon="warning" style="font-variation-settings: 'FILL' 1;">warning</span>
+<span class="font-label text-primary uppercase tracking-widest text-xs font-bold">Priority Alpha</span>
+</div>
+<h1 class="text-6xl md:text-8xl font-headline font-black tracking-tighter uppercase leading-none">Earthquake</h1>
+</div>
+</header>
+<!-- Phase Tabs -->
+<div class="mb-12 flex flex-col md:flex-row gap-4 p-2 bg-surface-container-low rounded-xl">
+<button class="flex-1 py-4 px-6 rounded-lg font-label font-bold text-sm tracking-widest bg-primary-container text-on-primary-container transition-all">BEFORE</button>
+<button class="flex-1 py-4 px-6 rounded-lg font-label font-bold text-sm tracking-widest text-on-surface-variant hover:bg-surface-container-high transition-all">DURING</button>
+<button class="flex-1 py-4 px-6 rounded-lg font-label font-bold text-sm tracking-widest text-on-surface-variant hover:bg-surface-container-high transition-all">AFTER</button>
+</div>
+<!-- Section: BEFORE -->
+<section class="space-y-8 mb-16">
+<div class="flex items-center justify-between">
+<h2 class="text-3xl font-headline font-bold tracking-tight">Mitigation Checklist</h2>
+<span class="font-label text-sm text-outline">0/6 COMPLETED</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Checklist Items -->
+<div class="group flex items-center gap-6 p-6 bg-surface-container-low rounded-xl hover:bg-surface-container-high transition-colors cursor-pointer">
+<div class="w-8 h-8 rounded border-2 border-outline-variant flex items-center justify-center group-hover:border-primary transition-colors">
+<span class="material-symbols-outlined text-primary hidden" data-icon="check">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline font-bold text-lg">Prepare survival bag</span>
+<span class="text-sm text-on-surface-variant">Include 72-hour food and water supply</span>
+</div>
+</div>
+<div class="group flex items-center gap-6 p-6 bg-surface-container-low rounded-xl hover:bg-surface-container-high transition-colors cursor-pointer">
+<div class="w-8 h-8 rounded border-2 border-outline-variant flex items-center justify-center group-hover:border-primary transition-colors">
+<span class="material-symbols-outlined text-primary hidden" data-icon="check">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline font-bold text-lg">Secure heavy furniture</span>
+<span class="text-sm text-on-surface-variant">Anchor tall units and appliances to studs</span>
+</div>
+</div>
+<div class="group flex items-center gap-6 p-6 bg-surface-container-low rounded-xl hover:bg-surface-container-high transition-colors cursor-pointer">
+<div class="w-8 h-8 rounded border-2 border-outline-variant flex items-center justify-center group-hover:border-primary transition-colors">
+<span class="material-symbols-outlined text-primary hidden" data-icon="check">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline font-bold text-lg">Identify safe spots</span>
+<span class="text-sm text-on-surface-variant">Locate sturdy tables in every room</span>
+</div>
+</div>
+<div class="group flex items-center gap-6 p-6 bg-surface-container-low rounded-xl hover:bg-surface-container-high transition-colors cursor-pointer">
+<div class="w-8 h-8 rounded border-2 border-outline-variant flex items-center justify-center group-hover:border-primary transition-colors">
+<span class="material-symbols-outlined text-primary hidden" data-icon="check">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline font-bold text-lg">Gas shut-off training</span>
+<span class="text-sm text-on-surface-variant">Know how to turn off main valves</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: DURING -->
+<section class="space-y-8 mb-16 py-12 border-y border-outline-variant/10">
+<div class="text-center max-w-2xl mx-auto space-y-6">
+<span class="font-label text-secondary uppercase tracking-[0.3em] font-bold">Active Protocol</span>
+<h2 class="text-4xl md:text-5xl font-headline font-black tracking-tighter">IMMEDIATE ACTION REQUIRED</h2>
+<p class="text-on-surface-variant leading-relaxed">During seismic activity, every second counts. Deploy the tactical guide for real-time survival instructions and communication beacon.</p>
+<button class="w-full h-[72px] bg-primary-container text-on-primary-container rounded-xl font-headline font-black text-xl tracking-tight flex items-center justify-center gap-4 hover:brightness-110 active:scale-95 transition-all shadow-xl shadow-primary-container/20">
+<span class="material-symbols-outlined" data-icon="bolt" style="font-variation-settings: 'FILL' 1;">bolt</span>
+                    Start Emergency Guide
+                </button>
+</div>
+</section>
+<!-- Section: AFTER -->
+<section class="space-y-8">
+<h2 class="text-3xl font-headline font-bold tracking-tight">Recovery &amp; Verification</h2>
+<div class="space-y-4">
+<div class="flex items-start gap-6 p-8 bg-surface-container-lowest border-l-4 border-secondary rounded-r-xl">
+<div class="bg-secondary-container/20 p-3 rounded-lg text-secondary">
+<span class="material-symbols-outlined" data-icon="medical_services">medical_services</span>
+</div>
+<div class="flex-1">
+<h3 class="font-headline font-bold text-xl mb-1">Check for injuries</h3>
+<p class="text-on-surface-variant">Perform a self-assessment then check others. Use the medical info panel for family records.</p>
+</div>
+</div>
+<div class="flex items-start gap-6 p-8 bg-surface-container-lowest border-l-4 border-error rounded-r-xl">
+<div class="bg-error-container/20 p-3 rounded-lg text-error">
+<span class="material-symbols-outlined" data-icon="domain_disabled">domain_disabled</span>
+</div>
+<div class="flex-1">
+<h3 class="font-headline font-bold text-xl mb-1">Avoid damaged buildings</h3>
+<p class="text-on-surface-variant">Structural integrity may be compromised. Watch for falling debris and secondary collapses.</p>
+</div>
+</div>
+<div class="flex items-start gap-6 p-8 bg-surface-container-lowest border-l-4 border-tertiary rounded-r-xl">
+<div class="bg-tertiary-container/20 p-3 rounded-lg text-tertiary">
+<span class="material-symbols-outlined" data-icon="leak_add">leak_add</span>
+</div>
+<div class="flex-1">
+<h3 class="font-headline font-bold text-xl mb-1">Check utility lines</h3>
+<p class="text-on-surface-variant">Smell for gas. Check for electrical sparks or broken water pipes. Report via Help Center.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pt-3 pb-8 bg-[#131313]/70 backdrop-blur-xl z-50 rounded-t-3xl border-t border-white/5 shadow-[0px_-24px_48px_rgba(0,0,0,0.5)]">
+<a class="flex flex-col items-center justify-center text-neutral-400 opacity-60 hover:opacity-100 transition-transform active:scale-90" href="#">
+<span class="material-symbols-outlined text-2xl" data-icon="home">home</span>
+<span class="font-['Space_Grotesk'] text-[10px] uppercase tracking-widest mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-red-600 text-white rounded-2xl px-5 py-2 scale-110 transition-transform active:scale-95" href="#">
+<span class="material-symbols-outlined text-2xl" data-icon="verified_user" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<span class="font-['Space_Grotesk'] text-[10px] uppercase tracking-widest mt-1">Preparedness</span>
+</a>
+<a class="flex flex-col items-center justify-center text-neutral-400 opacity-60 hover:opacity-100 transition-transform active:scale-90" href="#">
+<span class="material-symbols-outlined text-2xl" data-icon="smart_toy">smart_toy</span>
+<span class="font-['Space_Grotesk'] text-[10px] uppercase tracking-widest mt-1">AI Assistant</span>
+</a>
+<a class="flex flex-col items-center justify-center text-neutral-400 opacity-60 hover:opacity-100 transition-transform active:scale-90" href="#">
+<span class="material-symbols-outlined text-2xl" data-icon="settings">settings</span>
+<span class="font-['Space_Grotesk'] text-[10px] uppercase tracking-widest mt-1">Settings</span>
+</a>
+</nav>
+</body></html>

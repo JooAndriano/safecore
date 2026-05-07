@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&amp;family=Space_Grotesk:wght@300;500;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface": "#e5e2e1",
+                    "outline-variant": "#5d3f3b",
+                    "on-primary": "#690003",
+                    "on-tertiary": "#003545",
+                    "surface-variant": "#353534",
+                    "on-secondary-container": "#633700",
+                    "on-background": "#e5e2e1",
+                    "inverse-primary": "#c0000a",
+                    "inverse-surface": "#e5e2e1",
+                    "on-tertiary-container": "#002e3c",
+                    "secondary-fixed": "#ffdcbf",
+                    "surface-dim": "#131313",
+                    "primary": "#ffb4aa",
+                    "on-secondary": "#4b2800",
+                    "tertiary": "#68d3fc",
+                    "surface-container-lowest": "#0e0e0e",
+                    "surface-container": "#201f1f",
+                    "primary-container": "#ff5545",
+                    "on-tertiary-fixed": "#001f29",
+                    "secondary-fixed-dim": "#ffb874",
+                    "on-error": "#690005",
+                    "surface-container-high": "#2a2a2a",
+                    "secondary-container": "#fe9400",
+                    "on-error-container": "#ffdad6",
+                    "primary-fixed": "#ffdad5",
+                    "tertiary-container": "#1d9cc3",
+                    "surface-tint": "#ffb4aa",
+                    "inverse-on-surface": "#313030",
+                    "secondary": "#ffbc7c",
+                    "on-primary-fixed-variant": "#930005",
+                    "on-secondary-fixed-variant": "#6a3b00",
+                    "tertiary-fixed-dim": "#68d3fc",
+                    "on-surface-variant": "#e7bdb7",
+                    "on-secondary-fixed": "#2d1600",
+                    "primary-fixed-dim": "#ffb4aa",
+                    "on-tertiary-fixed-variant": "#004d63",
+                    "outline": "#ad8883",
+                    "error-container": "#93000a",
+                    "surface": "#131313",
+                    "surface-bright": "#393939",
+                    "surface-container-low": "#1c1b1b",
+                    "error": "#ffb4ab",
+                    "on-primary-container": "#5c0002",
+                    "surface-container-highest": "#353534",
+                    "on-primary-fixed": "#410001",
+                    "tertiary-fixed": "#bbe9ff",
+                    "background": "#131313"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Space Grotesk"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-shift {
+            background-color: #131313;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#131313] tonal-shift flex justify-between items-center px-6 h-20 w-full">
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-on-surface hover:bg-neutral-800 transition-colors p-2 rounded-full active:scale-95 duration-200" data-icon="menu">menu</button>
+<div class="flex flex-col">
+<h1 class="text-2xl font-black tracking-tighter text-[#e5e2e1] font-headline">SAFECORE</h1>
+<span class="font-label text-[10px] uppercase tracking-[0.2em] text-primary opacity-80">Emergency Assistant</span>
+</div>
+</div>
+<div class="flex items-center">
+<button class="material-symbols-outlined text-on-surface hover:bg-neutral-800 transition-colors p-2 rounded-full active:scale-95 duration-200" data-icon="search">search</button>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-2xl mx-auto space-y-8">
+<!-- Search Bar -->
+<section class="relative">
+<div class="flex items-center bg-surface-container-lowest h-14 px-5 rounded-xl border-b-2 border-transparent focus-within:border-primary transition-all">
+<span class="material-symbols-outlined text-on-surface-variant mr-3" data-icon="emergency">emergency</span>
+<input class="bg-transparent border-none focus:ring-0 text-on-surface w-full placeholder:text-on-surface-variant/50 font-body" placeholder="Search for emergency protocols..." type="text"/>
+</div>
+</section>
+<!-- Quick Action Buttons -->
+<section class="flex gap-3 overflow-x-auto pb-2 no-scrollbar">
+<button class="flex-shrink-0 flex items-center gap-3 bg-primary-container text-on-primary-container h-[72px] px-6 rounded-xl font-bold active:scale-95 transition-transform">
+<span class="material-symbols-outlined" data-icon="call" data-weight="fill" style="font-variation-settings: 'FILL' 1;">call</span>
+<span class="font-headline tracking-tight">Call Emergency</span>
+</button>
+<button class="flex-shrink-0 flex items-center gap-3 bg-secondary-container text-on-secondary-container h-[72px] px-6 rounded-xl font-bold active:scale-95 transition-transform">
+<span class="material-symbols-outlined" data-icon="flashlight_on">flashlight_on</span>
+<span class="font-headline tracking-tight">Flashlight</span>
+</button>
+<button class="flex-shrink-0 flex items-center gap-3 bg-surface-container-high text-on-surface h-[72px] px-6 rounded-xl font-bold active:scale-95 transition-transform">
+<span class="material-symbols-outlined" data-icon="share_location">share_location</span>
+<span class="font-headline tracking-tight">Share Location</span>
+</button>
+</section>
+<!-- Main Categories (Bento Cards) -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="group relative aspect-[4/3] rounded-3xl overflow-hidden bg-surface-container-low transition-all hover:bg-surface-container-high">
+<img alt="" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-60 transition-opacity" data-alt="Close-up of clinical equipment and first aid kit in a sterile dark environment with red accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8mkdvhSkfVY9_Iuo-lJ2mVEugK7dnxCxCBsfdWp7W3y3bgT35LBnzlHGJ7UZU3LzJiZdNAYzbkAHStrKdwtf2nBiFTb1aP3s1uy8kngA6bTASpOsa1eSvshCPoJiMszYRLwmJqgw2Hj5cAn_jFD4kIdrkCT9BPJWSRaW3LDjskX7iEH8xluROD5OZzk8ELQ_a5MCYgJQOwtAOAvsNFwKcFt_ti5ntd_8pIyEJoPOKLutk6extNzdoaeUF1_fC-xFzTLaKOqXKT2sD"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6">
+<span class="font-label text-[10px] uppercase tracking-widest text-primary mb-2 block">Protocol Alpha</span>
+<h3 class="text-2xl font-black font-headline text-on-surface leading-none">Medical Emergency</h3>
+<p class="text-sm text-on-surface-variant mt-2 opacity-80">Immediate first aid and life support guidance.</p>
+</div>
+</div>
+<div class="group relative aspect-[4/3] rounded-3xl overflow-hidden bg-surface-container-low transition-all hover:bg-surface-container-high">
+<img alt="" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-60 transition-opacity" data-alt="Cinematic wide shot of stormy clouds and dramatic weather phenomena with deep shadows and moody atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEZX2T3UIGguw9d52XQ_F1ZcTkEHAEeNf5T9CqrnyzWMnuZa1MH-BrfY0whZ1CRCdWiI8DKLi5XkF0Oyo7wggUhGLMNoTPCekCSotCYZp_k96FUzB5SSkvb6NlBGypd3fKbyEdJke_cqmBFA50a_nVsfxMIO1PiCfOH3o7-PLVmr9IUu5n3dK2OtTGL0Z5MeZY45tS5jIMnyE8RVEckj_ZhX_R1-bBLqqVMTFHVpUqe3JpQf594HqIKDhHqDa6fvhtpZkf_SyTwJSt"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6">
+<span class="font-label text-[10px] uppercase tracking-widest text-secondary mb-2 block">Protocol Omega</span>
+<h3 class="text-2xl font-black font-headline text-on-surface leading-none">Natural Disaster</h3>
+<p class="text-sm text-on-surface-variant mt-2 opacity-80">Evacuation routes and survival procedures.</p>
+</div>
+</div>
+</section>
+<!-- Quick Access Grid -->
+<section class="space-y-6">
+<div class="flex justify-between items-end px-2">
+<h4 class="font-label text-xs uppercase tracking-[0.3em] text-on-surface-variant">Immediate Response</h4>
+<div class="h-px flex-grow mx-4 bg-outline-variant opacity-20 mb-1.5"></div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+<button class="flex flex-col items-start p-5 bg-surface-container-lowest rounded-2xl border-l-4 border-primary transition-all active:scale-95 text-left">
+<span class="material-symbols-outlined text-primary mb-3" data-icon="person_off">person_off</span>
+<span class="font-headline font-bold text-on-surface">Unconscious</span>
+</button>
+<button class="flex flex-col items-start p-5 bg-surface-container-lowest rounded-2xl border-l-4 border-primary transition-all active:scale-95 text-left">
+<span class="material-symbols-outlined text-primary mb-3" data-icon="bloodtype">bloodtype</span>
+<span class="font-headline font-bold text-on-surface">Bleeding</span>
+</button>
+<button class="flex flex-col items-start p-5 bg-surface-container-lowest rounded-2xl border-l-4 border-secondary transition-all active:scale-95 text-left">
+<span class="material-symbols-outlined text-secondary mb-3" data-icon="landslide">landslide</span>
+<span class="font-headline font-bold text-on-surface">Earthquake</span>
+</button>
+<button class="flex flex-col items-start p-5 bg-surface-container-lowest rounded-2xl border-l-4 border-secondary transition-all active:scale-95 text-left">
+<span class="material-symbols-outlined text-secondary mb-3" data-icon="flood">flood</span>
+<span class="font-headline font-bold text-on-surface">Flood</span>
+</button>
+<button class="flex flex-col items-start p-5 bg-surface-container-lowest rounded-2xl border-l-4 border-secondary transition-all active:scale-95 text-left col-span-2 md:col-span-1">
+<span class="material-symbols-outlined text-secondary mb-3" data-icon="fire_truck">fire_truck</span>
+<span class="font-headline font-bold text-on-surface">Fire Response</span>
+</button>
+</div>
+</section>
+<!-- Status Map Minimal -->
+<section class="rounded-3xl bg-surface-container-low p-6 overflow-hidden relative">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></div>
+<span class="font-label text-xs uppercase tracking-widest text-on-surface">Live Network Status</span>
+</div>
+<span class="text-xs font-label text-on-surface-variant">42.3601° N, 71.0589° W</span>
+</div>
+<div class="aspect-video rounded-xl bg-surface-container overflow-hidden">
+<img alt="" class="w-full h-full object-cover grayscale brightness-50 contrast-125" data-alt="Stylized dark mode satellite map view with glowing red grid lines and emergency markers" data-location="New York" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0-nTxi8YjeCnugjVR5h5Z73jnfP8pcafWcJmwM23MIYBwBccpvEgzEM33U0TDN0XM9jydnj7bsoHSeSd0Qlr9Cw9zJzGXTIB0Oz7bZzp17mXZF68adb2JEDl0Cp1r6_TquFIV1R2xJ5LDOEX072EkLoBepg37MoosUZCtlPtJ8_55XuojVdU0LYB4GHjmVZuF2_L0vUrCc1aMb5dIUYBpnbtt4GPdps2AWP97e3xuB_cTnnpM1PA46RZmxtXQIbNXN7u8JyvA9UM7"/>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pt-3 pb-8 bg-[#131313]/70 backdrop-blur-xl z-50 rounded-t-3xl border-t border-white/5 shadow-[0px_-24px_48px_rgba(0,0,0,0.5)]">
+<a class="flex flex-col items-center justify-center bg-red-600 text-white rounded-2xl px-5 py-2 scale-110 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="home" data-weight="fill" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-['Space_Grotesk'] text-[10px] uppercase tracking-widest mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-neutral-400 opacity-60 hover:opacity-100 transition-all active:scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="verified_user">verified_user</span>
+<span class="font-['Space_Grotesk'] text-[10px] uppercase tracking-widest mt-1">Preparedness</span>
+</a>
+<a class="flex flex-col items-center justify-center text-neutral-400 opacity-60 hover:opacity-100 transition-all active:scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="smart_toy">smart_toy</span>
+<span class="font-['Space_Grotesk'] text-[10px] uppercase tracking-widest mt-1">AI Assistant</span>
+</a>
+<a class="flex flex-col items-center justify-center text-neutral-400 opacity-60 hover:opacity-100 transition-all active:scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-['Space_Grotesk'] text-[10px] uppercase tracking-widest mt-1">Settings</span>
+</a>
+</nav>
+</body></html>
